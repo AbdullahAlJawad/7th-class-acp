@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Glenn Maxwell</title></head>
+    <body>
+        <h2>JS while loop </h2>
+        <p id="number"></p>
+        <script>
+            //If & else
+            var player_name="Glenn Maxwell";
+            var jersey_number=32;
+            var player_type="batting";
+            var batting_format="T20 & ODI";
+            var player_age=35;
+            var player_wicket=5;
+            var e;
+            document.write("Player name: " + player_name);
+            document.write("<br>");
+            document.write("jersey_number: " + jersey_number);
+            document.write("<br>");
+            document.write("player_type: " + player_type);
+            document.write("<br>");
+            document.write("batting_format:" + batting_format);
+            document.write("<br>");           
+            document.write("player_age: " + player_age);
+            document.write("<br>");
+            document.write("player_wicket: " +player_wicket);
+            document.write("<br>");
+            document.write("the value is:" + e);
+
+            let mark=85;
+            if (mark>=90){
+                console.log("Grade A+")
+            }
+            else if (mark>=80){
+                console.log("Grade A")
+            }
+            else if (mark>=70){
+                console.log("Grade A-")
+            }
+            else if (mark>=60){
+                console.log("Grade B")
+            }
+            else if (mark>=50){
+                console.log("Grade C")
+            }
+            else if (mark>=40){
+                console.log("Grade D")
+            }
+            else{
+                console.log("You are fail")
+            }
+            //BMI
+
+    let weight=70;
+    let height=165;
+    let bmi=weight / (height*height);
+
+            if(bmi< 18.25){
+                console.log("BMI" +bmi.toFixed(2) + "- Underweight")
+            }
+            else if(bmi>=18.5 && bmi<24.9){
+                console.log("BMI" +bmi.toFixed(2) + "- Normal")
+            }
+            else if (bmi>=25 && bmi<29.9){
+                console.log("BMI" +bmi.toFixed(2) + "- Overweight")
+            }
+            else{
+                coconsole.log("BMI" +bmi.toFixed(2) + "- Obesity")
+            }
+            //while
+            var text ="";
+            var i=0;
+            while(i<10){
+                text +="<br> The number is " + i;
+                i++;
+
+            }
+            document.getElementById("number").innerHTML=text;
+        </script>
+    </body>
+</html>
